@@ -8,7 +8,11 @@ public class SampleResource {
 
     @RequestMapping("/")
     public String hello() {
-        return "Hello World 1";
+        return "response at Request '/'";
     }
-
+    
+    @RequestMapping("/rest")
+    public String rest() {
+        return "response at Request '/rest'";
+    }
 }
