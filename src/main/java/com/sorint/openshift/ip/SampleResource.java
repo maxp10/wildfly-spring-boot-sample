@@ -16,12 +16,12 @@ public class SampleResource {
 
 	@RequestMapping("/")
 	public String hello() {
-		return "response at Request '/'";
+		return "Request '/', response: root";
 	}
 
 	@RequestMapping("/rest")
 	public String rest() {
-		return "response at Request '/rest'";
+		return "Request '/rest', response: test done!";
 	}
 
 	@RequestMapping("/ipl")
@@ -37,7 +37,7 @@ public class SampleResource {
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		}
-		return "response at Request '/ipl' = " + out;
+		return "Request '/ipl', response: " + out;
 	}
 
 	@RequestMapping("/ip1")
@@ -59,7 +59,7 @@ public class SampleResource {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		return "response at Request '/ip1' : " + out;
+		return "Request '/ip1', response: " + out;
 	}
 
 	static String displayInterfaceInformation(NetworkInterface netint) throws SocketException {
@@ -94,7 +94,7 @@ public class SampleResource {
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		}
-		return "response at Request '/ip' : " + out;
+		return "Request '/ip', response: " + out;
 	}
 
 	private static InetAddress getLocalHostLANAddress() throws UnknownHostException {

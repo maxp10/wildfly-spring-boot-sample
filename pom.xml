@@ -13,6 +13,10 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.2.8.RELEASE</version>
     </parent>
+    
+        <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -39,11 +43,6 @@
             <artifactId>spring-boot-starter-undertow</artifactId>
         </dependency>
     </dependencies>
-
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
-
 
     <build>
         <plugins>
