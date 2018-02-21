@@ -1,4 +1,4 @@
-package de.vorb.wildfly_springboot;
+package com.sorint.openshift.ip;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;
